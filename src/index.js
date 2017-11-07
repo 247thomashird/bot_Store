@@ -6,22 +6,6 @@ import {Detailspage} from './details.js';
 import {Stars} from './stars.js';
 import './index.css';
 
-
-// class Stars extends React.Component {
-// 	render(){
-// 		var numstars = Math.floor(Math.random()*4 + 2);
-// 		var starstring = "";
-// 		for(let i=0;i<5;i++){
-// 			starstring += i<numstars ? '★ ':'☆ ';
-// 		}
-// 		return (
-// 			<div className="stars">
-// 				{starstring}
-// 			</div>
-// 		)
-// 	}
-// }
-
 class Tile extends React.Component {
 	render() {
 		return  (
@@ -32,13 +16,12 @@ class Tile extends React.Component {
 				<h1 onClick={this.props.opendetails}>{this.props.name}</h1>
 				<h2>{this.props.category}</h2>
 				<h4>{Math.floor(Math.random() * 200)} Views</h4>
-				<div className="channelicon"></div>
-				<div className="channelicon"></div>
+				<div className="channelicon chaticon"></div>
+				<div className="channelicon phoneicon"></div>
 				</div>
 			);
 	}
 }
-
 
 class App extends React.Component {
 	constructor(props){
@@ -53,6 +36,7 @@ class App extends React.Component {
 			detailspage: true
 		});
 	}
+
 	closedetails(){
 		this.setState({
 			detailspage: false

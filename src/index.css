@@ -11,7 +11,7 @@ body {
 .header{
   height:var(--headerheight);
   margin-bottom:0px;
-  box-shadow: 0px 3px 3px #888888;
+  box-shadow: 0px 3px 3px #cccccc;
 }
 .header > .pageTitle{
   font-size: 28px;
@@ -59,11 +59,17 @@ body {
   margin:10px;
 }
 .profileImage{
-  background-color:#666666;
-  height:50px;
-  width:50px;
-  border-radius:25px;
+  /*background-color:#666666;*/
+  border:2px solid #353535;
+  height:46px;
+  width:46px;
+  border-radius:50px;
   float:left;
+  font-size:37px;
+  text-align:center;
+}
+.profileimg{
+  background-image:url('./img/person.jpg');
 }
 .menu{
   clear:left;
@@ -128,21 +134,25 @@ h4{
   margin:10px 5px 0px 5px;
   height:30px;
   width:30px;
-  background-color:#bbbbbb;
   border: 1px solid #888888;
   border-radius:15px;
+  background-position: center 3px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
 }
-
+.phoneicon{
+  background-image:url('img/phone.svg');
+}
+.chaticon{
+  background-image:url('img/chat.svg');
+}
 .stars{
   color:orange;
   font-size:32px;
 }
-
 .backbutton{
   margin:10px;
-
 }
-
 .backbutton-arrow{
   float:left;
   font-size:24px;
