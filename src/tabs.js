@@ -23,7 +23,6 @@ export class Tabs extends React.Component{
 				<div className="tabs">
 					{this.state.tabtitles.map((title) => {
 						if (title !== this.state.activetab){
-
 						 return (<div className="tab" key={title} onClick={()=>{this.settoactive(title)}}>{title}
 						</div>)
 						} else{

@@ -237,5 +237,11 @@ h4{
   margin-top:60px;
   color:#666666;
 }
+.footer{
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index: 5;
+}
 
 
