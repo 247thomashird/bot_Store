@@ -33,7 +33,7 @@ export class Tabs extends React.Component{
 				</div>
 				{this.state.tabcontents}
 			</div>
-			)
+		)
 	}
 }
 
@@ -50,6 +50,6 @@ class Overview extends React.Component{
 			<br />	
 			This bot is intended specifically for airlines.
 			</div>
-			)
+		)
 	}
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-//import image from './img/person.jpg';
 
 export class Header extends React.Component {
   render(){

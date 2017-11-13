@@ -16,9 +16,16 @@ export class Stars extends React.Component {
 		for(let i=0;i<5;i++){
 			starstring += i<numstars ? '★ ':'☆ ';
 		}
+		var numreviews = "24";
+		if (this.props.numreviews != null){
+			numreviews = "(" +  this.props.numreviews + ")";
+		}
 		return (
 			<div className="stars">
 				{starstring}
+				<span className="numreviews">
+				{numreviews}
+				</span>
 			</div>
 		)
 	}

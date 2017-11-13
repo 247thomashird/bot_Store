@@ -44,7 +44,7 @@ body {
 .profileAndSupport{
   height:50px;
   position:absolute;
-  top:0px;
+  top:-5px;
   right:0px;
 }
 .Profile{
@@ -150,6 +150,16 @@ h4{
   color:orange;
   font-size:32px;
 }
+.numreviews{
+  color:#9a9a9a;
+  font-size:14px;
+  position:relative;
+  top:-14px;
+  left:-3px;
+}
+.numreviews:hover{
+  text-decoration:underline;
+}
 .backbutton{
   margin:10px;
 }
@@ -206,7 +216,6 @@ h4{
   clear:both;
   float:left;
   color:#aaaaaa;
-  /*text-align:center;*/
   width:100%;
   margin:4px;
 }
@@ -236,12 +245,8 @@ h4{
   margin-left:40px;
   margin-top:60px;
   color:#666666;
+  max-width:750px;
 }
-.footer{
-  position:absolute;
-  top:0px;
-  left:0px;
-  z-index: 5;
-}
+
 
 

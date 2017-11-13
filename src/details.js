@@ -8,7 +8,7 @@ export class Detailspage extends React.Component{
 		return (
 			<div>
 				<Backbutton goback={this.props.goback} />
-				<Rightvleft />
+				<Rightvleft curbot={this.props.curbot} />
 				<Tabs />
 			</div>
 			)
@@ -32,16 +32,15 @@ class Rightvleft extends React.Component{
 	render() {
 		return (
 			<div className="Rightvleft">
-				
 				<div className="left">
-					<img src="http://www.lorempixel.com/250/250/" className="detailimg" alt="randomtext" />
+					<img src={this.props.curbot.photo} className="detailimg" alt="randomtext" />
 					<div className="copyright">
 						&copy; 2017 [24]7.ai
 					</div>
 				</div>
-				<Right />
+				<Right curbot={this.props.curbot} />
 			</div>
-			)
+		)
 	}
 }
 
@@ -50,23 +49,23 @@ class Right extends React.Component{
 		return (
 			<div className="right">
 				<div className="details-title">
-				Address Capture Bot
+					{this.props.curbot.title}
 				</div>
 				<div className="details-category">
-				Travel
+					{this.props.curbot.category}
 				</div>
-				<Stars />
+				<Stars numreviews={this.props.curbot.numreviews} numstars={this.props.curbot.stars} />
 				<div className="details-description">
-				This bot can be used for baggage allowance queries and for payment capture. Includes inline validation and regex error handling.
+					This bot can be used for baggage allowance queries and for payment capture. Includes inline validation and regex error handling.
 				</div>
 				<div className="details-button">
-				Get This Bot
+					Get This Bot
 				</div>
 				<div className="details-button">
-				Share
+					Share
 				</div>
 			</div>
-			)
+		)
 	}
 }
 
